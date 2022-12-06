@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+    </head>
+
+    <body>
+        <!--Barre de navigation-->
+        <nav>
+            <!--Menu sur version ordinateur-->
+            <img src="../images/objet.png" class="obj" alt="">
+            <div class="menu">
+                <a class="btn" href=index.html>Accueil</a>
+                <div><a class="btn" href=historique.html>Historique et acteurs</a>
+                    <div class="submenu">
+                        <a class="btn" href=historique.html#historique>Historique</a>
+                        <a class="btn" href=historique.html#acteur>Acteur</a>
+                    </div>
+                </div>
+                <a class="btn" href=debat.html>Débat</a>
+                <a class="btn" href=avancee.html>Avancée</a>
+                <div><a class="btn" href=fonctionnement.html>Fonctionnement</a>
+                    <div class="submenu">
+                        <a class="btn" href=fonctionnement.html#principe>Principe</a>
+                        <a class="btn" href=fonctionnement.html#investissement>Investissement</a>
+                    </div>
+                </div>
+                <a class="btn" href=./contact.html>Contact</a>
+            </div> 
+            <!--Menu sur version téléphone portable (<650px)-->
+            <div class="burger">
+                <img src="../images/burger.png" class="bg" alt="">
+                <div class="menu2">
+                    <a class="btn" href=index.html>Accueil</a>
+                    <div><a class="btn" href=historique.html>Historique et acteurs</a>
+                        <div class="submenu">
+                            <a class="btn" href=historique.html#historique>Historique</a>
+                            <a class="btn" href=historique.html#acteur>Acteur</a>
+                        </div>
+                    </div>
+                    <a class="btn" href=debat.html>Débat</a>
+                    <a class="btn" href=avancee.html>Avancée</a>
+                    <div><a class="btn" href=fonctionnement.html>Fonctionnement</a>
+                        <div class="submenu">
+                            <a class="btn" href=fonctionnement.html#principe>Principe</a>
+                            <a class="btn" href=fonctionnement.html#investissement>Investissement</a>
+                        </div>
+                    </div>
+                    <a class="btn" href=./contact.html>Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!--Header-->
+        <header>
+            <h1 class="test">Contact</h1>
+        </header>
+
+        <!--Page principale-->
+        <section class="page">
+            <form action="sendToMySecondYearInIut.php" method="get">
+                <h2>Informations personnelles</h2>
+                
+                <div class="formulaire">
+                    <label for="surname">*Nom</label>
+                    <input id="surname" name="uname" type="text" required="" placeholder="Cena">
+                    <br>
+                </div>
+
+                <div class="formulaire">
+                    <label for="name">*Prenom</label>
+                    <input type="text" name="firstname" id="name" required="required" placeholder="John">
+                </div>
+
+                <div class="formulaire">
+                    <label for="email">*Email :</label>
+                    <input type="email" name="email" id="email" placeholder="john.cena@SAE.iut" required="required">
+                </div>
+
+                <div class="formulaire">
+                    <label for="codepostal">*Code Postal</label>
+                    <input type="text" name="codepostal" id="codepostal" required="required" placeholder="34090" minlength="5" maxlength="5">
+                </div>
+
+                <div class="formulaire">
+                    <label for="pays">*Pays d'origine</label>
+                    <select name="Pays" id="pays">
+                        <option value="fr">France</option>
+                        <option value="usa">U.S.A</option>
+                        <option value="chine">Chine</option>
+                        <option value="vn">Viêt Nam</option>
+                    </select>
+                    <br>
+                </div>
+
+
+                <h2>Contact</h2>
+
+                <div class="formulaire">
+                <label id="messagee">*Votre message pour nous : </label>
+                <textarea id="message" placeholder="Votre message"></textarea>
+                <br>
+                </div>
+
+                <div class="formulaire">
+                <label for="qs">Comment avez vous entendu parler de nous ?</label>
+                <select name="qs" id="qs">
+                    <option value="google">Par google, en voulant m'informer sur les ordinateurs quantiques</option>
+                    <option value="ami">Un ami m'a parlé de vous pour que je puisse m'informer</option>
+                    <option value="iut">Par l'intranet de l'IUT</option>
+                    <option value="sae">La SAE 1.5</option>
+                </select>
+                </div>
+
+                <div class="formulaire">
+                <label for="daterecontact">*Date de recontact :</label>
+                <input type="date" name="daterecontact" id="daterecontact" required="">
+                </div>
+
+                <div class="buttons">
+                    <button class="envoyer" type="submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
+        
+        <!--Footer-->
+        <footer class="footer">
+            <div>
+                <div class="alignement">
+                    <div class="colonne">
+                        <h3>Propriétaires</h3>
+                        <ul>
+                            <li><a>Célyan.R</a></li>
+                            <li><a>Killian.R</a></li>
+                            <li><a>Alexis.A</a></li>
+                            <li><a>Nicolas.S</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="colonne">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><img src="../images/tel.png" alt="" class="tel"><a class="az">0613181099</a></li>
+                        <li><img src="../images/arobase.png" alt="" class="arobase"><a>SAE.S5@etu.iut.fr</a></li>
+                        <li><a href="./contact.html">Contactez-nous</a></li>
+                    </ul>
+                </div>
+                <div class="colonne">
+                    <h3>A propos de nous</h3>
+                    <ul>
+                        <li><a>Etudiants en première année d'un BUT informatique</a></li>
+                        <li><a>Nous avons mis en place ce site dans le projet de la SAE 1.6</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><a href="./sources.html">Nos sources</a></h3>
+                </div>
+                <p class="copyright">S5_RRAS © 2021</p>
+            </div>
+        </footer>
+</html>
